@@ -1,0 +1,45 @@
+{
+  "name": "phonecat_3",
+  "version": "1.0.0",
+  "description": "Phonecat app with browserify and npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patelpriyank/phonecat_3.git"
+  },
+  "keywords": [
+    "AgularJS",
+    "Browserify",
+    "NPM"
+  ],
+  "author": "Priyank Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patelpriyank/phonecat_3/issues"
+  },
+  "homepage": "https://github.com/patelpriyank/phonecat_3#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "browser-sync": "^2.18.1",
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.4",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
