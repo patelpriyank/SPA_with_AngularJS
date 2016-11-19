@@ -1,10 +1,7 @@
 var source = require('vinyl-source-stream'); // use the original module directly where you can, which is what vinyl-source-stream handles for you.
 var gulp = require('gulp'),
-    gutil = require('gulp-util'),
     jshint = require('gulp-jshint'),
     browserify = require('browserify'),
-    concat = require('gulp-concat'),
-    clean = require('gulp-clean'),
     streamify = require('gulp-streamify'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename');
@@ -26,22 +23,6 @@ gulp.task('browserify', function() {
     .pipe(rename('bundle.js'))
     .pipe(gulp.dest('dist.dev/'))
 });
-
-/*
-// Browserify task
-gulp.task('browserify', function() {
-  // Single point of entry (make sure not to src ALL your files, browserify will figure it out for you)
-  gulp.src(['app/app.js'])
-  .pipe(browserify({
-    insertGlobals: true,
-    debug: true
-  }))
-  // Bundle to a single file
-  .pipe(concat('bundle.js'))
-  // Output it to our dist folder
-  .pipe(gulp.dest('dist.dev/'));
-});
-*/
 
 // Views task
 gulp.task('views', function() {
