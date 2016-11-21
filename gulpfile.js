@@ -1,17 +1,50 @@
-var source = require('vinyl-source-stream'); // use the original module directly where you can, which is what vinyl-source-stream handles for you.
-var gulp = require('gulp'),
+ /*,
     jshint = require('gulp-jshint'),
-    browserify = require('browserify'),
     streamify = require('gulp-streamify'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename');*/
+var gulp = require('gulp');
+var plugins = require('gulp-load-plugins')();
+var source = require('vinyl-source-stream'); // use the original module directly where you can, which is what vinyl-source-stream handles for you.
+var browserify = require('browserify');
+
+var paths = {
+    scripts: 'app/**/*.js',
+    index: './app/index.html',
+    partials: ['app/**/*.html', '!app/index.html'],
+    distProd: './dist.prod',
+    distScriptsProd: './dist.prod/scripts',
+    vendorScripts: ['./node_modules/angular/angular.min.js']
+};
+
+var pipes = {};
+
+/*** Vendor scripts *********/
+pipes.orderedVendorScripts = function() {
+    return plugins.order(['angular.js']);
+};
+
+pipes.builtVendorScriptsProd = function() {
+    return gulp.src(paths.vendorScripts)
+        .pipe(plugins.debug({title: "vendorScripts:"}))
+        .pipe(pipes.orderedVendorScripts())
+        .pipe(plugins.concat('vendor.min.js'))
+        .pipe(plugins.uglify())
+        .pipe(gulp.dest(paths.distScriptsProd));
+};
+
+// concatenates, uglifies, and moves vendor scripts into the prod environment
+gulp.task('build-vendor-scripts-prod', pipes.builtVendorScriptsProd);
+
+/**** END OF Vendor scripts ***/
+
 
 // JSHint task
 gulp.task('lint', function() {
   gulp.src('./app/**/*.js')
-  .pipe(jshint())
+  .pipe(plugins.jshint())
   // You can look into pretty reporters as well, but that's another story
-  .pipe(jshint.reporter('default'));
+  .pipe(plugins.jshint.reporter('default'));
 });
 
 gulp.task('browserify', function() {
@@ -19,8 +52,8 @@ gulp.task('browserify', function() {
  
   bundleStream
     .pipe(source('./app/app.js'))
-    .pipe(streamify(uglify()))
-    .pipe(rename('bundle.js'))
+    .pipe(plugins.streamify(plugins.uglify()))
+    .pipe(plugins.rename('bundle.js'))
     .pipe(gulp.dest('dist.dev/'))
 });
 
@@ -41,4 +74,4 @@ gulp.task('watch', ['lint'], function() {
   ]);
 });
 
-gulp.task('default', ['lint', 'browserify', 'views', 'watch']);
+gulp.task('default', ['lint', 'browserify', 'views', 'build-vendor-scripts-prod', 'watch']);
