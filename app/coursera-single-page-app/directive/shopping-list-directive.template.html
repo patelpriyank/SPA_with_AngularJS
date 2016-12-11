@@ -1,0 +1,9 @@
+<h3>Title: {{ slCtrl.myTitle }}</h3>
+<ol>
+  <li ng-repeat="item in slCtrl.items">
+    {{ item.quantity }} of {{ item.name }}
+    <button ng-click="slCtrl.badRemove($index);">Bad Remove Item</button>
+    <button ng-click="slCtrl.onRemove({index: $index});">Remove Item</button>
+  </li>
+</ol>
+<div class="error" ng-if="slCtrl.cookiesInList()">WARNING! WARNING! COOKIES DETECTED!</div>

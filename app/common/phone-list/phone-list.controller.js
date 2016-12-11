@@ -1,7 +1,7 @@
     var phoneListCtrl = function(){
         var _this = this;
 
-        this.name = "priyank patel";
+        this.name = "Machu Pichhu";
         this.phones = [
         {
           name: 'Nexus S',

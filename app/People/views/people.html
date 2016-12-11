@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://web.whatsapp.com/ -->
+<html class="js cssanimations csstransitions webp webp-alpha webp-animation webp-lossless wf-roboto-n4-active wf-opensans-n4-active wf-opensans-n6-active wf-roboto-n3-active wf-roboto-n5-active wf-active" dir="ltr" manifest="/404.appcache"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>WhatsApp</title>
+<meta name="viewport" content="width=device-width">
+<meta name="google" content="notranslate">
+<meta name="format-detection" content="telephone=no">
+
+<meta name="description" content="Quickly send and receive WhatsApp messages right from your computer.">
+<meta name="og:description" content="Quickly send and receive WhatsApp messages right from your computer.">
+<meta name="og:url" content="https://web.whatsapp.com/">
+<meta name="og:title" content="WhatsApp Web">
+<meta name="og:image" content="https://www.whatsapp.com/img/fb-post.jpg">
+
+<link id="favicon" rel="shortcut icon" href="blob:https://web.whatsapp.com/fbc40dda-bf1f-4555-8737-4a97a83c5204" type="image/png">
+<link rel="apple-touch-icon" sizes="194x194" href="https://web.whatsapp.com/apple-touch-icon.png" type="image/png">
+
+<link rel="stylesheet" href="./WhatsApp_files/sprite_6f0ea6575638ad50bfd1.css">
+<link rel="stylesheet" id="style" href="./WhatsApp_files/style_4ea77507119a99159cea.css">
+
+<style>
+html, body, #app {
+height: 100%;
+width: 100%;
+overflow: hidden;
+padding: 0;
+margin: 0;
+}
+
+#app {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#startup, #initial_startup {
+width: 100%;
+height: 100%;
+position: fixed;
+background-color: #f2f2f2;
+
+-moz-user-select: none;
+-webkit-user-select: none;
+
+display: flex;
+align-items: center;
+justify-content: center;
+display: -webkit-box;
+display: -webkit-flex;
+-webkit-align-items: center;
+-webkit-justify-content: center;
+flex-direction: column;
+-webkit-flex-direction: column;
+}
+
+.spinner-container {
+-webkit-animation: rotate 2s linear infinite;
+animation: rotate 2s linear infinite;
+z-index: 2;
+}
+
+.spinner-container .path {
+stroke-dasharray: 1,150; 
+stroke-dashoffset: 0;
+stroke: rgba(27, 154, 89, 0.7);
+stroke-linecap: round;
+-webkit-animation: dash 1.5s ease-in-out infinite;
+animation: dash 1.5s ease-in-out infinite;
+}
+
+#startup .spinner-container .path,
+#initial_startup .spinner-container .path {
+stroke: #acb9bf;
+}
+
+@keyframes rotate {
+100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes rotate{
+100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes dash {
+0% {
+stroke-dasharray: 1,150;  
+stroke-dashoffset: 0;
+}
+50% {
+stroke-dasharray: 90,150; 
+stroke-dashoffset: -35;   
+}
+100% {
+stroke-dasharray: 90,150; 
+stroke-dashoffset: -124;  
+}
+}
+@-webkit-keyframes dash {
+0% {
+stroke-dasharray: 1,150;  
+stroke-dashoffset: 0;
+}
+50% {
+stroke-dasharray: 90,150; 
+stroke-dashoffset: -35;   
+}
+100% {
+stroke-dasharray: 90,150; 
+stroke-dashoffset: -124;  
+}
+}
+
+.progress-container {
+width: 360px;
+position: fixed;
+padding-top: 120px;
+top: 50%;
+left: 50%;
+margin-left: -180px;
+}
+
+@keyframes appear {
+0% {
+opacity: 0.5;
+transform: scaleY(0);
+}
+100% {
+opacity: 1;
+transform: scaleY(1);
+}
+}
+@-webkit-keyframes appear {
+0% {
+opacity: 0.5;
+transform: scaleY(0);
+}
+100% {
+opacity: 1;
+transform: scaleY(1);
+}
+}
+
+progress {
+-webkit-appearance: none;
+appearance: none;
+width: 100%;
+height: 3px;
+border: none;
+margin: 0;
+opacity: 0;
+
+animation: appear .3s ease-out forwards;
+animation-delay: .2s;
+-webkit-animation: appear .3s ease-out forwards;
+-webkit-animation-delay: .2s;
+
+color: #02d1a4;
+background-color: #e0e4e5;
+}
+
+progress[value]::-webkit-progress-bar {
+background-color: #e0e4e5;
+}
+
+progress[value]::-webkit-progress-value {
+background-color: #02d1a4;
+}
+
+progress[value]::-moz-progress-bar {
+background-color: #02d1a4;
+}
+</style>
+<script id="progress_script_0" type="text/javascript" charset="utf-8" async="" src="./WhatsApp_files/vendor1_a1ca37909dfb1eb4d886.js"></script><script id="progress_script_1" type="text/javascript" charset="utf-8" async="" src="./WhatsApp_files/vendor2_d9d66f2fd399f05643a8.js"></script><script id="progress_script_2" type="text/javascript" charset="utf-8" async="" src="./WhatsApp_files/app_428c3f4ecf06c078e8c7.js"></script><link rel="stylesheet" href="./WhatsApp_files/css" media="all"><script type="text/javascript" charset="utf-8" async="" src="./WhatsApp_files/main_edce65c9f5b7d638d5df.js"></script><style id="asset-style" type="text/css"></style><script type="text/javascript" charset="utf-8" async="" src="./WhatsApp_files/main_edce65c9f5b7d638d5df.js"></script></head>
+<body>
+<div id="dic_bubble" class="selection_bubble" style="z-index: 9999; visibility: hidden;" fetching="false"></div><div id="app"><div data-reactroot="" class="app-wrapper app-wrapper-web app-wrapper-main"><span></span><span></span><span></span><span></span><span></span><div tabindex="-1" class="app two"><!-- react-empty: 29 --><!-- react-empty: 30 --><div class="drawer-manager"><span class="pane pane-one"></span><span class="pane pane-two"></span><span class="pane pane-three"></span></div><div id="side" class="pane pane-list pane-one"><header class="pane-header pane-list-header"><div class="pane-list-user"><div class="avatar icon-user-default" style="height: 40px; width: 40px; cursor: pointer;"><div class="avatar-body"></div></div></div><div class="pane-list-controls"><div class="menu menu-horizontal"><span><div class="menu-item"><button class="icon icon-chat" title="New chat"></button><span></span></div><div class="menu-item"><button class="icon icon-menu" title="Menu"></button><span></span></div></span></div></div></header><div class="butterbar-container"><span><div class="butterbar-wrapper"><div class="butterbar butterbar-phone"><div class="butterbar-icon"><span class="icon icon-alert icon-alert-phone"></span></div><div class="butterbar-body"><div class="butterbar-title">Phone Not Connected</div><div class="butterbar-text"><span><!-- react-text: 59 -->Make sure your phone has an active Internet connection.<!-- /react-text --><!-- react-text: 60 -->&nbsp;<!-- /react-text --><span class="action">Learn more</span></span></div></div></div></div></span></div><div tabindex="-1" class="search-container"><div class="pane-subheader pane-list-subheader subheader-search"><button class="icon icon-search-morph"><div class="icon icon-back-blue"></div><div class="icon icon-search"></div></button><span></span><div class="input-placeholder">Search or start new chat</div><label for="input-chatlist-search" class="cont-input-search"><input type="text" class="input input-search" data-tab="2" dir="auto" spellcheck="false" title="Search or start new chat" value=""></label></div></div><div class="pane-body pane-list-body" id="pane-side" data-list-scroll-container="true"><div tabindex="-1" data-tab="3"><div class="infinite-list chatlist infinite-list-animate"><div class="infinite-list-viewport" style="height: 6912px;"><div class="infinite-list-item infinite-list-item-transition" style="z-index: 88; height: 72px; transform: translate3d(0px, 504px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-group-default"><div class="avatar-body"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="avatar-image"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Xavierites"><!-- react-text: 92 -->Xavierites<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">yesterday</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪Photo‬"><span class="chat-status-name number" dir="auto"><!-- react-text: 357 -->+1 (818) 642-7542<!-- /react-text --></span><span class="chat-status-divider">:</span><span class="icon media-icon icon-status-image"></span><span class="emojitext ellipsify"><!-- react-text: 361 -->Photo<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 93; height: 72px; transform: translate3d(0px, 144px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-user-default"><div class="avatar-body"><img src="./WhatsApp_files/pp" class="avatar-image is-loaded"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Anar"><!-- react-text: 111 -->Anar<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">1:28 PM</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪And they are going to Egypt in December‬"><span class="icon icon-status-dblcheck"></span><span class="emojitext ellipsify" dir="ltr"><!-- react-text: 324 -->And they are going to Egypt in December<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 89; height: 72px; transform: translate3d(0px, 432px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-group-default"><div class="avatar-body"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Vacation"><!-- react-text: 129 -->Vacation<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">yesterday</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪Photo‬"><span class="icon icon-status-dblcheck-ack"></span><span class="icon media-icon icon-status-image"></span><span class="emojitext ellipsify"><!-- react-text: 343 -->Photo<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 94; height: 72px; transform: translate3d(0px, 72px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-user-default"><div class="avatar-body"><img src="./WhatsApp_files/pp(1)" class="avatar-image is-loaded"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="GECG-Hemil Damor"><!-- react-text: 148 -->GECG-Hemil Damor<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">1:38 PM</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪👍‬"><span class="emojitext ellipsify"><img alt="👍" draggable="false" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="emoji emojiordered0911"></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="first infinite-list-item infinite-list-item-transition" style="z-index: 95; height: 72px; transform: translate3d(0px, 0px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="active chat"><div class="chat-avatar"><div class="avatar icon-group-default"><div class="avatar-body"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Family Business"><!-- react-text: 166 -->Family Business<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">2:33 PM</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪Wah‬"><span class="chat-status-name" dir="auto"><!-- react-text: 302 -->Shaan Memon<!-- /react-text --></span><span class="chat-status-divider">:</span><span class="emojitext ellipsify" dir="ltr"><!-- react-text: 305 -->Wah<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 92; height: 72px; transform: translate3d(0px, 216px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-user-default"><div class="avatar-body"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="avatar-image"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Nirav"><!-- react-text: 185 -->Nirav<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">10:21 AM</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪Ok‬"><span class="emojitext ellipsify" dir="ltr"><!-- react-text: 297 -->Ok<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 86; height: 72px; transform: translate3d(0px, 648px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-group-default"><div class="avatar-body"><img src="./WhatsApp_files/pp(2)" class="avatar-image is-loaded"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Jersey Stars"><!-- react-text: 204 -->Jersey Stars<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">yesterday</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪Video‬"><span class="chat-status-name number" dir="auto"><!-- react-text: 348 -->+1 (551) 556-7677<!-- /react-text --></span><span class="chat-status-divider">:</span><span class="icon media-icon icon-status-video"></span><span class="emojitext ellipsify"><!-- react-text: 352 -->Video<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 91; height: 72px; transform: translate3d(0px, 288px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-user-default"><div class="avatar-body"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="avatar-image"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Bloomberg-Fei He"><!-- react-text: 223 -->Bloomberg-Fei He<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">yesterday</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪https://goo.gl/photos/RztsrHG3rE1ddJjH9‬"><span class="icon icon-status-dblcheck-ack"></span><span class="emojitext ellipsify" dir="ltr"><!-- react-text: 330 -->https://goo.gl/photos/RztsrHG3rE1ddJjH9<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 85; height: 72px; transform: translate3d(0px, 720px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-group-default"><div class="avatar-body"><img src="./WhatsApp_files/pp(3)" class="avatar-image is-loaded"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Sampan&#39;s Family"><!-- react-text: 242 -->Sampan's Family<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">Friday</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪प्रिय प्रधानमंत्री नरेंद्र मोदी साहब,
+
+नमस्ते,
+
+मेरा नाम प्रसाद है। मेरा Balanagar हैदराबाद में एक छोटा उद्योग है। मेरे  उद्योग की प्रति माह आमदनी लगभग 2 लाख रुपये है। इसका मतलब यह प्रति वर्ष 24 लाख रुपये है। ईमानदारी और सच्चाई से सभी छूटों के साथ मेरे द्वारा सरकार को लगभग 3 लाख आयकर का भुगतान किया जाना चाहिए। लेकिन मैं सिर्फ 30,000 भुगतान करता हूँ । क्यूं कर?
+
+मैं एक मध्यम वर्गीय परिवार से हूँ और कड़ी मेहनत और अध्ययन के साथ स्वयं को स्थापित किया । शुरू में मैंने नौकरी की, लेकिन एक एक पैसा बचा कर मैंने अपना उद्योग प्रारम्भ किया। मेरे परिवार की जरूरतों और जीवन यापन के लिए 1 लाख पर्याप्त है और अन्य 1 लाख मैंने अपने भविष्य के लिए  निवेश किया (सोने या शेयर या भूमि खरीदने में)
+
+जो एक लाख मैं परिवार के लिए खर्च करता हूँ ,उसमें 30000 परोक्ष रूप से किसी न किसी टैक्स के रूप में सरकार को जा रहा है। किराने का सामान से टीवी और मोबाइल तक के लिए मैं केवल टैक्स में 20 से 30% का भुगतान कर रहा हूँ। अगर मैं ड्रिंक की एक छोटी सी पार्टी का आनंद लेना चाहूँ जिस पर 3000 का खर्च आना है तो 60% सरकार को कर के रूप में जायेगा।
+
+यहाँ तक कि एक लीटर पेट्रोल के लिए 30 रुपये टैक्स के रूप में सरकार को जा रहा है। जब मैंने कार खरीदी अकेले करों के रूप में डेढ़ लाख का भुगतान किया। एक प्लाट के पंजीकरण के लिए मैंने शुल्क के रूप में 1 लाख का भुगतान किया। जिस कॉलोनी में मैं रह रहा हूँ वहां मानक के अनुरूप एक सड़क नहीं है फिर भी मैंने विकास शुल्क के रूप में 50,000 का भुगतान किया।
+
+सरकारी अस्पतालों में मरीजों की दुर्दशा देखकर और निजी अस्पतालों की लूटपाट प्रकृति के कारण, मैंने  अपने परिवार के सदस्यों के लिए एक स्वास्थ्य बीमा पॉलिसी ले लिया और बेशर्मी यह कि इसपर भी मुझसे सेवा कर चार्ज किया गया।
+
+सरकार लुटेरों की तरह हर जगह टैक्स वसूल रही है यहाँ तक कि शमशान में भी।  पर बदले में दे क्या रही है ?
+
+अगर हम अपने बच्चों को सरकारी स्कूलों में दाखिल कराएं तो क्या हमें वहां उनके कुछ सीखने का भरोसा होगा ? यदि हम सरकारी अस्पतालों में इलाज के लिए जाएं तो क्या हमारे ज़िंदा वापस आने की कोई उम्मीद है ? देश के रक्षा क्षेत्र के अतिरिक्त अन्य कहीं हम समझ नहीं रहे हैं कहीं विकास कार्य हो रहा है । एक कार खरीदने जाएँ, वहाँ सड़क कर लग रहा है, सड़क पर आते हैं वहाँ टोल टैक्स है। क्या हम हर जगह ठगे नहीं जा रहे महोदय ?
+
+करों के रूप में जो भुगतान हम कर रहे हैं वह पैसा कहाँ जा रहा है ? मैं अपने कर्मचारियों के वेतन में वृद्धि से पहले उनके काम का मूल्यांकन करता हूँ, लेकिन सरकार क्या कर रही है? कोई सरकारी कर्मचारी काम करता है या नहीं इससे कोई फ़र्क़ नहीं पड़ता उन्हें समान वेतन वृद्धि मिलती है। हमारा पैसा इतना सस्ता क्यों है सर? हमारे टैक्स से ऊंचे वेतन लेने वाले लोग हमारे ही काम नहीं करते हैं। कार्यालय का समय 10 बजे है लोग11 पर आते हैं और रिश्वत के बिना लैश मात्र भी क़दम नहीं बढ़ाते । इसलिए, हमें बताएं, क्यों हमें करों का भुगतान करना चाहिए? अपने उद्योग के लिए निर्बाध बिजली लेने के लिए मुझे रिश्वत देनी पड़ती है । सब मिला कर मैं प्रति माह रिश्वत के रूप में लगभग 10000 भुगतान करता हूँ । सर मैं व्हाइट मनी में इस रिश्वत को कैसे दिखा सकता हूँ??
+
+बस यही कारण है कि हमें सरकारों को कर का भुगतान करने से नफरत है। सर इसका मतलब यह नहीं है कि मेरी कोई सामाजिक जिम्मेदारी नहीं है। जब आपने  सेना कोष के लिए मदद करने की अपील की मैंने 10000 दिए । मैं 20000 मेरे पड़ोस में एक अनाथालय के लिए हर साल देता हूँ  और मेरे पिता के नाम पर 1 लाख का दान दिया था जब मेरे गांव के लोगों ने कहा कि वे स्कूल का उत्थान करना चाहते हैं । लेकिन खेद है सर, सरकार को कर का भुगतान करने के लिए मेरे पास वही दिल नहीं है!
+
+वैसे भी, यह अतीत है। अब हम सफेद में सब कुछ देखेंगे। चूंकि आपने निश्चय कर लिया है तो मैं 10 लाख पर 30% कर का भुगतान करके अपने धन को सफेद कर लूँगा । लेकिन मुझे विश्वास है कि 10000 रिश्वत हर महीने देने की जरूरत नहीं है? या फिर आप लोगों को अनुमति देंगे कि चेक के रूप में भी रिश्वत स्वीकार करें?
+
+मैंने अभी नेताओं की तो बात ही नहीं की !  एक सड़क छाप नेता से लेकर MLA तक और सभी पार्टी के इलेक्शन फण्ड में भी हमें देना है।  अगर मैं ऐसा न करूँ तो बर्बाद कर दिया जाऊँगा। क्या आप ऐसे फंड्स को केवल चेक से स्वीकार करने का अधिनियम लाएंगे? क्या पार्टी फंड जनता के सामने खोल कर रखा जाएगा?
+
+पहले से ही हम इतने सारे करों का भुगतान कर रहे हैं, बदले में सरकार हमें क्या दे रही है। सर हम राजनेताओं की विलासितापूर्ण जीवन के लिए या निकम्मे सरकारी कर्मचारियों के वेतन के लिए करों का भुगतान नहीं कर सकते । हम जितना संभव होगा भुगतान नहीं करने की कोशिश करेंगे।
+
+अगले 10 वर्षों में देश में हम फिर से काले धन की भारी वृद्धि देखेंगे। क्या एक बार फिर demonetization हो सकता है? सर हमने आप को इसलिए नहीं चुना है। आप हमारा विश्वास जीतें , जिन करों का हम भुगतान कर रहे हैं उनके साथ न्याय करें, तभी लोगों का सरकारों में विश्वास बहाल होगा। हम आप का समर्थन करने के लिए तैयार हैं, और आप के एक्शन का इंतजार कर रहे हैं !
+
+आपका -  एक मतदाता‬"><span class="chat-status-name" dir="auto"><!-- react-text: 315 -->Papa<!-- /react-text --></span><span class="chat-status-divider">:</span><span class="emojitext ellipsify" dir="ltr"><!-- react-text: 318 -->प्रिय प्रधानमंत्री नरेंद्र मोदी साहब,
+
+नमस्ते,
+
+मेरा नाम प्रसाद है। मेरा Balanagar हैदराबाद में एक छोटा उद्योग है। मेरे  उद्योग की प्रति माह आमदनी लगभग 2 लाख रुपये है। इसका मतलब यह प्रति वर्ष 24 लाख रुपये है। ईमानदारी और सच्चाई से सभी छूटों के साथ मेरे द्वारा सरकार को लगभग 3 लाख आयकर का भुगतान किया जाना चाहिए। लेकिन मैं सिर्फ 30,000 भुगतान करता हूँ । क्यूं कर?
+
+मैं एक मध्यम वर्गीय परिवार से हूँ और कड़ी मेहनत और अध्ययन के साथ स्वयं को स्थापित किया । शुरू में मैंने नौकरी की, लेकिन एक एक पैसा बचा कर मैंने अपना उद्योग प्रारम्भ किया। मेरे परिवार की जरूरतों और जीवन यापन के लिए 1 लाख पर्याप्त है और अन्य 1 लाख मैंने अपने भविष्य के लिए  निवेश किया (सोने या शेयर या भूमि खरीदने में)
+
+जो एक लाख मैं परिवार के लिए खर्च करता हूँ ,उसमें 30000 परोक्ष रूप से किसी न किसी टैक्स के रूप में सरकार को जा रहा है। किराने का सामान से टीवी और मोबाइल तक के लिए मैं केवल टैक्स में 20 से 30% का भुगतान कर रहा हूँ। अगर मैं ड्रिंक की एक छोटी सी पार्टी का आनंद लेना चाहूँ जिस पर 3000 का खर्च आना है तो 60% सरकार को कर के रूप में जायेगा।
+
+यहाँ तक कि एक लीटर पेट्रोल के लिए 30 रुपये टैक्स के रूप में सरकार को जा रहा है। जब मैंने कार खरीदी अकेले करों के रूप में डेढ़ लाख का भुगतान किया। एक प्लाट के पंजीकरण के लिए मैंने शुल्क के रूप में 1 लाख का भुगतान किया। जिस कॉलोनी में मैं रह रहा हूँ वहां मानक के अनुरूप एक सड़क नहीं है फिर भी मैंने विकास शुल्क के रूप में 50,000 का भुगतान किया।
+
+सरकारी अस्पतालों में मरीजों की दुर्दशा देखकर और निजी अस्पतालों की लूटपाट प्रकृति के कारण, मैंने  अपने परिवार के सदस्यों के लिए एक स्वास्थ्य बीमा पॉलिसी ले लिया और बेशर्मी यह कि इसपर भी मुझसे सेवा कर चार्ज किया गया।
+
+सरकार लुटेरों की तरह हर जगह टैक्स वसूल रही है यहाँ तक कि शमशान में भी।  पर बदले में दे क्या रही है ?
+
+अगर हम अपने बच्चों को सरकारी स्कूलों में दाखिल कराएं तो क्या हमें वहां उनके कुछ सीखने का भरोसा होगा ? यदि हम सरकारी अस्पतालों में इलाज के लिए जाएं तो क्या हमारे ज़िंदा वापस आने की कोई उम्मीद है ? देश के रक्षा क्षेत्र के अतिरिक्त अन्य कहीं हम समझ नहीं रहे हैं कहीं विकास कार्य हो रहा है । एक कार खरीदने जाएँ, वहाँ सड़क कर लग रहा है, सड़क पर आते हैं वहाँ टोल टैक्स है। क्या हम हर जगह ठगे नहीं जा रहे महोदय ?
+
+करों के रूप में जो भुगतान हम कर रहे हैं वह पैसा कहाँ जा रहा है ? मैं अपने कर्मचारियों के वेतन में वृद्धि से पहले उनके काम का मूल्यांकन करता हूँ, लेकिन सरकार क्या कर रही है? कोई सरकारी कर्मचारी काम करता है या नहीं इससे कोई फ़र्क़ नहीं पड़ता उन्हें समान वेतन वृद्धि मिलती है। हमारा पैसा इतना सस्ता क्यों है सर? हमारे टैक्स से ऊंचे वेतन लेने वाले लोग हमारे ही काम नहीं करते हैं। कार्यालय का समय 10 बजे है लोग11 पर आते हैं और रिश्वत के बिना लैश मात्र भी क़दम नहीं बढ़ाते । इसलिए, हमें बताएं, क्यों हमें करों का भुगतान करना चाहिए? अपने उद्योग के लिए निर्बाध बिजली लेने के लिए मुझे रिश्वत देनी पड़ती है । सब मिला कर मैं प्रति माह रिश्वत के रूप में लगभग 10000 भुगतान करता हूँ । सर मैं व्हाइट मनी में इस रिश्वत को कैसे दिखा सकता हूँ??
+
+बस यही कारण है कि हमें सरकारों को कर का भुगतान करने से नफरत है। सर इसका मतलब यह नहीं है कि मेरी कोई सामाजिक जिम्मेदारी नहीं है। जब आपने  सेना कोष के लिए मदद करने की अपील की मैंने 10000 दिए । मैं 20000 मेरे पड़ोस में एक अनाथालय के लिए हर साल देता हूँ  और मेरे पिता के नाम पर 1 लाख का दान दिया था जब मेरे गांव के लोगों ने कहा कि वे स्कूल का उत्थान करना चाहते हैं । लेकिन खेद है सर, सरकार को कर का भुगतान करने के लिए मेरे पास वही दिल नहीं है!
+
+वैसे भी, यह अतीत है। अब हम सफेद में सब कुछ देखेंगे। चूंकि आपने निश्चय कर लिया है तो मैं 10 लाख पर 30% कर का भुगतान करके अपने धन को सफेद कर लूँगा । लेकिन मुझे विश्वास है कि 10000 रिश्वत हर महीने देने की जरूरत नहीं है? या फिर आप लोगों को अनुमति देंगे कि चेक के रूप में भी रिश्वत स्वीकार करें?
+
+मैंने अभी नेताओं की तो बात ही नहीं की !  एक सड़क छाप नेता से लेकर MLA तक और सभी पार्टी के इलेक्शन फण्ड में भी हमें देना है।  अगर मैं ऐसा न करूँ तो बर्बाद कर दिया जाऊँगा। क्या आप ऐसे फंड्स को केवल चेक से स्वीकार करने का अधिनियम लाएंगे? क्या पार्टी फंड जनता के सामने खोल कर रखा जाएगा?
+
+पहले से ही हम इतने सारे करों का भुगतान कर रहे हैं, बदले में सरकार हमें क्या दे रही है। सर हम राजनेताओं की विलासितापूर्ण जीवन के लिए या निकम्मे सरकारी कर्मचारियों के वेतन के लिए करों का भुगतान नहीं कर सकते । हम जितना संभव होगा भुगतान नहीं करने की कोशिश करेंगे।
+
+अगले 10 वर्षो<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 87; height: 72px; transform: translate3d(0px, 576px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-user-default"><div class="avatar-body"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="avatar-image"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Nimisha Aunty"><!-- react-text: 261 -->Nimisha Aunty<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">yesterday</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪Ok‬"><span class="emojitext ellipsify" dir="ltr"><!-- react-text: 292 -->Ok<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div><div class="infinite-list-item infinite-list-item-transition" style="z-index: 90; height: 72px; transform: translate3d(0px, 360px, 0px);"><div tabindex="-1" class="chat-drag-cover"><div class="chat"><div class="chat-avatar"><div class="avatar icon-user-default"><div class="avatar-body"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="avatar-image"></div></div></div><div class="chat-body"><div class="chat-main"><div class="chat-title"><span class="emojitext ellipsify" dir="auto" title="Papaji"><!-- react-text: 280 -->Papaji<!-- /react-text --></span></div><div class="chat-meta"><span class="chat-time">yesterday</span></div></div><div class="chat-secondary"><div class="chat-status" title="‪Photo‬"><span class="icon media-icon icon-status-image"></span><span class="emojitext ellipsify"><!-- react-text: 336 -->Photo<!-- /react-text --></span></div><div class="chat-meta"><span></span><span></span><span></span></div></div></div></div></div></div></div></div></div></div></div><div tabindex="-1" id="main" class="pane pane-chat pane-two"><div class="pane-chat-tile"></div><header class="pane-header pane-chat-header"><div class="chat-avatar"><div class="avatar icon-group-default" style="height: 40px; width: 40px;"><div class="avatar-body"></div></div></div><div class="chat-body"><div class="chat-main"><h2 class="chat-title" dir="auto"><span class="emojitext ellipsify" title="Family Business"><!-- react-text: 374 -->Family Business<!-- /react-text --></span></h2></div><!-- react-empty: 458 --></div><div class="pane-chat-controls"><div class="menu menu-horizontal"><div class="menu-item"><button class="icon icon-search-alt" title="Search…"></button><span></span></div><div class="menu-item"><button class="icon icon-clip" title="Attach"></button><span></span></div><div class="menu-item"><button class="icon icon-menu" title="Menu"></button><span></span></div></div></div></header><div class="pane-body pane-chat-tile-container"><div><span></span><span></span><div class="pane-chat-msgs pane-chat-body lastTabIndex" tabindex="0"><div class="pane-chat-empty"></div><div class="more"><div class="btn-more" title="loading messages…"><svg class="spinner-container" viewBox="0 0 46 46" style="width: 24px; height: 24px;"><circle class="path" cx="23" cy="23" r="20" fill="none" stroke-width="6"></circle></svg></div></div><div class="message-list"><div class="msg"><div class="message message-system"><span class="message-system-body"><span class="hidden-token"><!-- react-text: 403 -->⁠⁠⁠⁠<!-- /react-text --><span class="emojitext" dir="auto"><!-- react-text: 405 -->TODAY<!-- /react-text --></span><!-- react-text: 406 -->⁠⁠⁠⁠⁠<!-- /react-text --></span></span></div></div><div class="msg msg-group"><span></span><div class="message message-chat message-in tail message-chat"><div><span class="tail-container"></span><!-- react-text: 412 -->  <!-- /react-text --><span class="tail-container highlight"></span><!-- react-text: 414 -->                      <!-- /react-text --><div class="bubble bubble-text has-author"><h3 class="message-author color-1"><span class="hidden-token"><!-- react-text: 418 -->⁠⁠⁠⁠<!-- /react-text --><span class="text-clickable"><span class="emojitext"><!-- react-text: 421 -->Shaan Memon<!-- /react-text --></span></span><!-- react-text: 422 -->⁠⁠⁠⁠⁠<!-- /react-text --></span></h3><div class="message-text" data-id="false_14154836845-1410746136@g.us_9151619B0BEE110CA73B23ECE50314"><span class="message-pre-text"><!-- react-text: 425 -->⁠⁠<!-- /react-text --><!-- react-text: 426 -->[2:33 PM, 12/4/2016]<!-- /react-text --><!-- react-text: 427 -->&nbsp;<!-- /react-text --><!-- react-text: 428 -->Shaan Memon<!-- /react-text --><!-- react-text: 429 -->:&nbsp;⁠⁠⁠<!-- /react-text --></span><span class="emojitext selectable-text" dir="ltr"><!-- react-text: 431 -->Wah<!-- /react-text --></span></div><div class="message-meta"><span class="hidden-token"><!-- react-text: 434 -->⁠⁠⁠⁠<!-- /react-text --><span class="message-datetime">2:33 PM</span><!-- react-text: 436 -->⁠⁠⁠⁠⁠<!-- /react-text --></span></div></div><span></span></div></div></div></div></div></div></div><div class="compose-filler" style="height: 0px;"></div><footer tabindex="-1" class="pane-footer pane-chat-footer"><!-- react-empty: 440 --><div class="block-compose"><button class="icon icon-smiley btn-emoji"></button><div tabindex="-1" class="input-container"><div tabindex="-1" class="input-emoji"><div class="input-placeholder" style="visibility: visible;">Type a message</div><div class="input" contenteditable="true" data-tab="1" dir="auto" spellcheck="true"></div></div></div><div class="ptt-container"><span><button class="icon btn-icon icon-ptt"></button></span></div></div><div class="compose-box-items-positioning-container"><div class="compose-box-items-overlay-container"><div></div></div></div><span class="mentions-positioning-container"></span></footer><span></span><!-- react-empty: 455 --></div></div></div></div>
+
+
+
+<script src="./WhatsApp_files/progress_1d608d9bf0c7ece0328311cff56c7a06.js"></script>
+
+
+
+
+</body></html>

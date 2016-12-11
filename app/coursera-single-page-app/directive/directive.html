@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingListDirectiveApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Directives with Isolate Scope and '&'</title>
+  </head>
+  <body>
+    <h1>Directives with Isolate Scope and '&'</h1>
+
+    <!-- LIST #1 - unlimited items -->
+    <div id="list" ng-controller='ShoppingListController as slCtrl'>
+      <input type="text" ng-model="slCtrl.itemName" placeholder="item name">
+      <input type="text" ng-model="slCtrl.itemQuantity" placeholder="quantity">
+      <button ng-click="slCtrl.addItem();">Add Item</button>
+      <span>{{ slCtrl.lastRemoved }}</span>
+
+      <shopping-list 
+        items="slCtrl.items" 
+        title="{{slCtrl.title}}"
+        bad-remove="slCtrl.removeItem" 
+        on-remove="slCtrl.removeItem(index)"></shopping-list>
+    </div>
+
+    <script src="../../bundle.js" type="text/javascript"></script>
+  </body>
+</html>
