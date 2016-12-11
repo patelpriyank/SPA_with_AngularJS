@@ -1,0 +1,22 @@
+<html ng-app='ShoppingListPromiseApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping List with a Promise</title>
+  </head>
+  <body>
+      <div  ng-controller="ShoppingListPromiseController as slpCtrl">
+          <h3>Shopping List</h3>
+          <input type="text" ng-model="slpCtrl.itemName" placeholder="item name" />
+          <input type="text" ng-model="slpCtrl.itemQuantity" placeholder="qauantity" /> boxes
+          <button ng-click="slpCtrl.addItem();">Add item</button>
+          <ol>
+              <li ng-repeat="item in slpCtrl.items">
+                  {{ item.itemQuantity }} boxes of {{ item.itemName }}
+                  <button ng-click="slpCtrl.removeItem($index);">Remove item</button>
+              </li>
+          </ol>
+      </div>
+    <script src="../../bundle.js" type="text/javascript"></script>
+  </body>
+
+</html>
