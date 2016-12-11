@@ -1,4 +1,4 @@
-function ShoppingListService(maxItems) {
+function ShoppingService(maxItems) {
     var slsService = this;
     var items = [];
     slsService.addItem = function (itemName, quantity) {
@@ -25,12 +25,24 @@ function ShoppingListService(maxItems) {
 }
 
 
-var shoppingListFactory = function ShoppingListFactory() {
-        var factory = function(maxItems) {
-            return new ShoppingListService(maxItems);
-        };
+module.exports =  function ShoppingListServiceProvider() {
+    var provider = this;
 
-        return factory;
+    provider.defauls = {
+        maxItems: 10
     };
 
-module.exports = shoppingListFactory;
+    provider.$get = function() {
+        return new ShoppingService(provider.defauls.maxItems);
+    };
+};
+
+/*
+module.exports =  function ShoppingListFactory() {
+    var factory = function(maxItems) {
+        return new ShoppingService(maxItems);
+    };
+
+    return factory;
+};
+*/

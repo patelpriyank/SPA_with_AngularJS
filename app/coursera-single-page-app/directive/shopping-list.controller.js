@@ -1,8 +1,12 @@
-var shoppingListCtrl = function ShoppingListController(ShoppingListFactory) {
+var shoppingListCtrl = function ShoppingListController(ShoppingListService) {
     var list = this;
 
-    // Use factory to create new shopping list service
-    var shoppingList = ShoppingListFactory();
+    /* with factory definition, user () to execute the function and get service instance
+    var shoppingList = ShoppingListService();
+     */
+    
+    // provider's $get returns service instance so no need to execute any function with () like factover one above
+    var shoppingList = ShoppingListService;
 
     list.items = shoppingList.getItems();
     var origTitle = "Shopping List #1";
@@ -26,6 +30,6 @@ var shoppingListCtrl = function ShoppingListController(ShoppingListFactory) {
     };
 };
 
-shoppingListCtrl.$inject = ['ShoppingListFactory'];
+shoppingListCtrl.$inject = ['ShoppingListService'];
 
 module.exports = shoppingListCtrl;
