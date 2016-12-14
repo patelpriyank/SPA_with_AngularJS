@@ -9,6 +9,7 @@ function ShoppingService(maxItems) {
                 quantity: quantity
             };
             items.push(item);
+            console.log("Added item: ", item);
         }
         else {
             throw new Error("Max items (" + maxItems + ") reached.");
@@ -16,6 +17,7 @@ function ShoppingService(maxItems) {
     };
 
     slsService.removeItem = function(itemIndex) {
+        console.log("Removing item: ", items[itemIndex]);
         items.splice(itemIndex, 1);
     };
 
