@@ -28,6 +28,7 @@
   "devDependencies": {
     "angular": "^1.5.8",
     "angular-mocks": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
     "browser-sync": "^2.18.1",
     "browserify": "^13.1.1",
     "gulp": "^3.9.1",

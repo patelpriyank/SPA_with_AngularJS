@@ -25,7 +25,7 @@ var paths = {
     distScripts: './dist.dev/scripts',
     distStyles: './dist.dev/styles',
     distImages: "./dist.dev/Assets/images/",
-    vendorScripts: ['./node_modules/angular/angular.min.js']
+    vendorScripts: ['./app/VendorScripts/*.js']
 };
 
 var pipes = {};
@@ -109,7 +109,9 @@ gulp.task('watch', ['lint'], function() {
   ]);
 });
 
-gulp.task('default', ['lint', 'browserify', 'views', 'build-vendor-scripts', 'styles', 'images', 'watch']);
+//gulp.task('default', ['lint', 'browserify', 'views', 'build-vendor-scripts', 'styles', 'images', 'watch']);
+gulp.task('default', ['lint', 'browserify', 'views', 'styles', 'images', 'watch']);
+
 
 //browser-sync start --server --directory --files '**/*'
 

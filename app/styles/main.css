@@ -22,3 +22,7 @@ body {
   left: calc(100% / 2);
   top: 10px;
 }
+
+.activeTab {
+  font-weight: bold;
+}

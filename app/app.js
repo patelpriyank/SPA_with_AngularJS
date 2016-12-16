@@ -15,3 +15,6 @@ require("./coursera-single-page-app/component-shopping-list/app");
 
 //events system: $broadcast & $emit
 require("./coursera-single-page-app/events-broadcast-emit/app");
+
+//Single page app: routing with ui-router
+require("./coursera-single-page-app/Routing/app");

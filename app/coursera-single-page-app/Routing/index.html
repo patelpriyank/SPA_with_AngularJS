@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app='RoutingApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Routing with ui-router</title>
+  </head>
+  <body>
+    <h1>Routing with ui-router</h1>
+
+    <div class="tabs">
+      <a ui-sref='tab1' ui-sref-active='activeTab'>Tab1</a>
+      <a ui-sref='tab2' ui-sref-active='activeTab'>Tab2</a>
+    </div>
+
+    <!-- Placeholder for ui-router to inject partial views -->
+    <ui-view></ui-view>
+
+    <script src="../../bundle.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../../styles/main.css">
+  </body>
+</html>
