@@ -1,4 +1,4 @@
-function ShoppingService(maxItems) {
+function ShoppingService(maxItems, $q, $timeout) {
     var slsService = this;
     var items = [];
     slsService.addItem = function (itemName, quantity) {
@@ -22,20 +22,50 @@ function ShoppingService(maxItems) {
     slsService.getItems = function() {
         return items;
     };
+
+    slsService.getItemsDeferred = function() {
+        var itemsDeferred = [];
+        // Pre-populate a no cookie list
+        itemsDeferred.push({
+            name: "Sugar",
+            quantity: "2 bags",
+            description: "Sugar used for baking delicious umm... baked goods."
+        });
+        itemsDeferred.push({
+            name: "flour",
+            quantity: "1 bags",
+            description: "High quality wheat flour. Mix it with water, sugar, 2 raw eggs."
+        });
+        itemsDeferred.push({
+            name: "Chocolate Chips",
+            quantity: "3 bags",
+            description: "Put these in the dough. No reason, really. Gotta store them somewhere!"
+        });
+        
+        var deferred = $q.defer();
+        $timeout(function() {
+            deferred.resolve(itemsDeferred);
+        }, 800);
+
+        return deferred.promise;
+    };
 }
 
 
-module.exports =  function ShoppingListServiceProvider() {
+var slsProvider = function ShoppingListServiceProvider() {
     var provider = this;
 
     provider.defauls = {
         maxItems: 10
     };
 
-    provider.$get = function() {
-        return new ShoppingService(provider.defauls.maxItems);
+    provider.$get = function($q, $timeout) {
+        return new ShoppingService(provider.defauls.maxItems, $q, $timeout);
     };
+    provider.$get.$inject = ['$q', '$timeout'];
 };
+
+module.exports = slsProvider;
 
 /*
 module.exports =  function ShoppingListFactory() {
