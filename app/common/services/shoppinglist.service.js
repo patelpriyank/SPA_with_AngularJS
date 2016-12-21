@@ -24,6 +24,7 @@ function ShoppingService(maxItems, $q, $timeout) {
     };
 
     slsService.getItemsDeferred = function() {
+
         var itemsDeferred = [];
         // Pre-populate a no cookie list
         itemsDeferred.push({
@@ -43,6 +44,12 @@ function ShoppingService(maxItems, $q, $timeout) {
         });
         
         var deferred = $q.defer();
+
+        /* Invokes $stateChangeError through resolve in app.routes
+        deferred.reject("testing rejection");
+        return deferred.promise;
+        */
+
         $timeout(function() {
             deferred.resolve(itemsDeferred);
         }, 800);

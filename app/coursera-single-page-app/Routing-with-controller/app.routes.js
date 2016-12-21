@@ -8,7 +8,8 @@ var config = function($stateProvider, $urlRouterProvider) {
     })
     .state('mainList', {
         templateUrl: 'ShoppingList/main-shoppinglist.template.html',
-        url: '/main-list'
+        url: '/main-list',
+        controller: 'MainShoppingListCtrl as mslCtrl'
     });
 
 };

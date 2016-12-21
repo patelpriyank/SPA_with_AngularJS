@@ -18,4 +18,5 @@ require("./coursera-single-page-app/events-broadcast-emit/app");
 
 //Single page app: routing with ui-router
 require("./coursera-single-page-app/Routing/app");
-require("./coursera-single-page-app/Routing-with-controller/app");
+//require("./coursera-single-page-app/Routing-with-controller/app");
+require("./coursera-single-page-app/Routing-with-resolve/app");
