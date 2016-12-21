@@ -9,7 +9,7 @@ var config = function($stateProvider, $urlRouterProvider) {
     .state('mainList', {
         templateUrl: 'ShoppingList/main-shoppinglist.template.html',
         url: '/main-list',
-        controller: 'RWRShoppingListCtrl as rwrMslCtrl',
+        controller: 'ShoppingListCtrl as mslCtrl',
         resolve: {
             items: ['ShoppingListService', function(ShoppingListService) {
                 //ui-router will wait for promise to finish before returning data.

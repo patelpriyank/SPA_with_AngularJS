@@ -1,5 +1,5 @@
-var mainShoppingListCtrl = function RWRShoppingListCtrl(items) {
-    console.log("RWRShoppingListCtrl items: ", items)
+var mainShoppingListCtrl = function ShoppingListCtrl(items) {
+    console.log("ShoppingListCtrl items: ", items)
     var $ctrl = this;
     $ctrl.items = items;
 };
