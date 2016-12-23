@@ -21,3 +21,4 @@ require("./coursera-single-page-app/Routing/app");
 
 require("./coursera-single-page-app/Routing-with-controller/app");
 require("./coursera-single-page-app/Routing-with-resolve/app");
+require("./coursera-single-page-app/Routing-with-URLParam/app");
