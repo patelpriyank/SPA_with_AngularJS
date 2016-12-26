@@ -2,14 +2,15 @@ var config = function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-    .state('home', {
+    .state('rwscsHome', {
         url: '/',
         templateUrl: 'ShoppingList/home.template.html'
     })
-    .state('mainList', {
+    .state('rwscsMainList', {
         templateUrl: 'ShoppingList/main-shoppinglist.template.html',
         url: '/main-list',
-        controller: 'ShoppingListCtrl as mslCtrl',
+        controller: require('./ShoppingList/main-shoppinglist.controller'),
+        controllerAs: 'mslCtrl',
         resolve: {
             items: ['ShoppingListService', function(ShoppingListService) {
                 //ui-router will wait for promise to finish before returning data.
@@ -17,10 +18,11 @@ var config = function($stateProvider, $urlRouterProvider) {
             }]
         }
     })
-    .state('mainList.itemDetail', {
+    .state('rwscsMainList.rwscsItemDetail', {
         templateUrl: 'ShoppingList/shoppinglist-component/itemdetail.template.html',
         url: '/item-detail/{itemId}',
-        controller: 'ItemDetailCtrl as idCtrl',
+        controller: require('./ShoppingList/shoppinglist-component/itemdetail.controller'),
+        controllerAs: 'idCtrl',
         params: {
             itemId: null
         }

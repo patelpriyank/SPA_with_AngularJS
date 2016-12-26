@@ -10,7 +10,7 @@ var itemDetailCtrl = function ItemDetailCtrl($stateParams, items, $timeout) {
         $ctrl.name = item.name;
         $ctrl.quantity = item.quantity;
         $ctrl.description = item.description;
-    }, 800);
+    }, 1000);
 };
 
 itemDetailCtrl.$inject = ['$stateParams', 'items', '$timeout'];

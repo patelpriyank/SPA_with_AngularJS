@@ -1,0 +1,5 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items" ui-sref="rwscsMainList.rwscsItemDetail({itemId: $index})">
+    {{ item.name }} with {{ item.quantity }}
+  </li>
+</ul>

@@ -1,4 +1,5 @@
 var itemDetailCtrl = function ItemDetailCtrl($stateParams, items) {
+    console.log("ItemDetailCtrl..", this);
     var $ctrl = this;
     var item = items[$stateParams.itemId];
     $ctrl.name = item.name;
