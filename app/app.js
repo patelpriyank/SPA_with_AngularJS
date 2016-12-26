@@ -23,3 +23,4 @@ require("./coursera-single-page-app/6-Routing-with-controller/app");
 require("./coursera-single-page-app/7-Routing-with-resolve/app");
 require("./coursera-single-page-app/8-Routing-with-URLParam/app");
 require("./coursera-single-page-app/9-Routing-with-childview/app");
+require("./coursera-single-page-app/10-Routing-with-stateChange-Spinner/app");
