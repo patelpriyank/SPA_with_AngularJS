@@ -1,14 +1,14 @@
 {
-  "name": "phonecat_3",
+  "name": "SPA_with_AngularJS",
   "version": "1.0.0",
-  "description": "Phonecat app with browserify and npm",
+  "description": "Single page app with AngularJS, browserify, gulp and npm",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patelpriyank/phonecat_3.git"
+    "url": "git+https://github.com/patelpriyank/SPA_with_AngularJS.git"
   },
   "keywords": [
     "AgularJS",
@@ -18,9 +18,9 @@
   "author": "Priyank Patel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/patelpriyank/phonecat_3/issues"
+    "url": "https://github.com/patelpriyank/SPA_with_AngularJS/issues"
   },
-  "homepage": "https://github.com/patelpriyank/phonecat_3#readme",
+  "homepage": "https://github.com/patelpriyank/SPA_with_AngularJS#readme",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-mocks": "^1.5.8"
